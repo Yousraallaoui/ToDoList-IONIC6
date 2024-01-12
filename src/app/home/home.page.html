@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ToDoList
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+   <div id="container">
+    <strong>What's up, Joy!</strong>
+    <span class="sub-header">categories</span>
+    home.page.html
+   <ion-slides pager="false" [options]="sliderConfig">
+      <ion-slide class="categories">
+        <div class="categories-buttons business">
+          <span >40</span>
+          <span>Business</span>
+        </div>
+        <ion-progress-bar mode="ios" value="0.7">
+
+        </ion-progress-bar>
+      </ion-slide>
+      <ion-slide class="categories">
+        <div class="categories-buttons personal">
+          <span class="task-count">18</span>
+          <span class="categories-name">personal</span>  
+        </div>
+        <ion-progress-bar mode="ios" value="18/58">
+        </ion-progress-bar>
+      </ion-slide>
+      
+    </ion-slides>
+    <span class="todays-header"> TODAY'S TASKs</span>
+    <div class="task-list">
+      <app-task [textContent]="'Task 1'" ></app-task>
+      <app-task [textContent]="'Task 2'"></app-task>
+    </div>
+
+</ion-content>
